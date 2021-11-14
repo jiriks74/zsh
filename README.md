@@ -35,12 +35,12 @@ ln -s ~/zsh/zshrc.pure ~/.zsh
 
 ### Get this from your distribution's repository
   ### Debian Dependencies
-    ```bash
+    ```
     sudo apt install autojump zsh
     ```
 
   ### Arch Dependencies
-    ```bash
+    ```
     yay -S autojump zsh
     ```
 
@@ -55,15 +55,14 @@ To set zsh as default shell for your user, edit `/etc/passwd` (from `/bin/bash` 
 ```chsch $USER```
 
 #### Modifying `/etc/passwd`
-  * Change your user in /etc/passwd to /bin/zsh instead of /bin/bash
+  * Change your user in `/etc/passwd` to `/bin/zsh` instead of `/bin/bash`
 <details>
 
   * Find line containing your username
-  * Put your username instead of `user`
 
-From: `user:x:1000:1000::/home/user:/bin/bash`
+From: ...`:/bin/bash`
 
-To:   `user:x:1000:1000::/home/user:/bin/zsh`
+To:   ...`:/bin/zsh`
 </details>
 
 ## What I used
