@@ -43,7 +43,9 @@ ln -s ~/zsh/zshrc.pure ~/.zsh
 To set zsh as default shell for your user, edit `/etc/passwd` (from `/bin/bash` to `/bin/zsh`)
 ### There are two ways:
 #### Running this command:
-```chsch $USER```
+- ```chsch $USER```
+- Input your password
+- Input `/bin/zsh`
 #### Modifying `/etc/passwd`
   * Find line containing your username
   * Put your username instead of `user`
