@@ -59,10 +59,10 @@ To set zsh as default shell for your user, edit `/etc/passwd` (from `/bin/bash` 
 <details>
 
   * Find line containing your username
+  * Change the end of the line
+    From: ...`:/bin/bash`
 
-From: ...`:/bin/bash`
-
-To:   ...`:/bin/zsh`
+    To:   ...`:/bin/zsh`
 </details>
 
 ## What I used
