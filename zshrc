@@ -47,5 +47,6 @@ source $HOME/zsh/git/git.plugin.zsh 2>/dev/null
 source $HOME/zsh/ssh-connect/ssh-connect.sh 2>/dev/null
 source $HOME/zsh/web-search/web_search.plugin.zsh 2>/dev/null
 source $HOME/zsh/oh-my-zsh-dirhistory/dirhistory.plugin.zsh 2>/dev/null
-source /usr/share/autojump/autojump.zsh 2>/dev/null
+source $HOME/zsh/zsh-z/zsh-z.plugin.zsh 2>/dev/null
+#source /usr/share/autojump/autojump.zsh 2>/dev/null
 alias mon2cam="deno run --unstable -A -r -q https://raw.githubusercontent.com/ShayBox/Mon2Cam/master/src/mod.ts"

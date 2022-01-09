@@ -22,3 +22,6 @@
 [submodule "git"]
 	path = git
 	url = git@github.com:davidde/git.git
+[submodule "zsh-z"]
+	path = zsh-z
+	url = git@github.com:agkozak/zsh-z.git
