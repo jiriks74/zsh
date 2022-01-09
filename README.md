@@ -7,6 +7,18 @@ My ZSH config
 cd ~
 git clone --recursive https://github.com/jiriks74/zsh
 ```
+  - Link the `zsh` file to your home folder as `.zshrc`
+```
+ln -s ~/zsh/zshrc ~/.zshrc
+```
+  - Set the `powerlevel10k` theme the way you like it
+```
+zsh
+```
+  - If configuration won't start automatically, just run
+```
+p10k config
+```
 
 ## Updating
 ```
@@ -22,20 +34,6 @@ git submodule update --init --recursive
 cd ~/zsh
 git fetch
 git reset --hard origin/master
-```
-
-### `powerlevel10k` theme
-  - Link the `zsh` file to your home folder as `.zshrc`
-```
-ln -s ~/zsh/zshrc ~/.zshrc
-```
-  - Set the `powerlevel10k` theme the way you like it
-```
-zsh
-```
-  - If configuration won't start automatically, just run
-```
-p10k config
 ```
 
 ## Get Dependencies
