@@ -15,6 +15,15 @@ git pull --recurse-submodules
 git submodule update --init --recursive
 ```
 
+###  Problems with updating (this will delete any customizations you have made in `~/zsh`
+  - If you get `fatal: refusing to merge unrelated histories` you have changes in `~zsh` that are not in the repository
+  - If you have backed up your customizations (if you have any) this will delete all differences between `~/zsh` and the repository
+```
+cd ~/zsh
+git fetch
+git reset --hard origin/master
+```
+
 ### `powerlevel10k` theme
   - Link the `zsh` file to your home folder as `.zshrc`
 ```
