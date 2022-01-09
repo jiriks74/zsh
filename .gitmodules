@@ -12,16 +12,16 @@
 	url = https://github.com/romkatv/powerlevel10k.git
 [submodule "zsh-you-should-use"]
 	path = zsh-you-should-use
-	url = git@github.com:MichaelAquilina/zsh-you-should-use.git
+	url = https://github.com/MichaelAquilina/zsh-you-should-use.git
 [submodule "ssh-connect"]
 	path = ssh-connect
-	url = git@github.com:gko/ssh-connect.git
+	url = https://github.com/gko/ssh-connect.git
 [submodule "web-search"]
 	path = web-search
-	url = git@github.com:sineto/web-search.git
+	url = https://github.com/sineto/web-search.git
 [submodule "git"]
 	path = git
-	url = git@github.com:davidde/git.git
+	url = https://github.com/davidde/git.git
 [submodule "zsh-z"]
 	path = zsh-z
-	url = git@github.com:agkozak/zsh-z.git
+	url = https://github.com/agkozak/zsh-z.git
