@@ -28,14 +28,24 @@ bindkey  "^[[H"   beginning-of-line
 bindkey  "^[[F"   end-of-line
 bindkey  "^[[3~"  delete-char
 
-export PATH=$PATH:/home/jirka/.local/bin
+# Some basic env setup
+export PATH=$PATH:/home/$USER/.local/bin
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export YSU_MESSAGE_POSITION="after"
 
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/zsh/aliasrc" ] && source "$HOME/zsh/aliasrc"
 
+# Initialize `thefuck`
+eval $(thefuck --alias)
+
 # Load ; should be last.
 source $HOME/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source $HOME/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+source $HOME/zsh/zsh-you-should-use/you-should-use.plugin.zsh 2>/dev/null
+source $HOME/zsh/git/git.plugin.zsh 2>/dev/null
+source $HOME/zsh/ssh-connect/ssh-connect.sh 2>/dev/null
+source $HOME/zsh/web-search/web_search.plugin.zsh 2>/dev/null
+source $HOME/zsh/oh-my-zsh-dirhistory/dirhistory.plugin.zsh 2>/dev/null
 source /usr/share/autojump/autojump.zsh 2>/dev/null
 alias mon2cam="deno run --unstable -A -r -q https://raw.githubusercontent.com/ShayBox/Mon2Cam/master/src/mod.ts"

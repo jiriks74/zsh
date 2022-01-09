@@ -43,7 +43,7 @@ export EDITOR=nano
 
 alias pacman-update='sudo reflector -c $country -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist'
 
-alias ls='ls'
+alias ls='ls --color'
 alias ll='ls -l'
 # ls, the common ones I use a lot shortened for rapid fire usage
 alias l='ls -lFh'     #size,show type,human readable
@@ -95,20 +95,22 @@ alias wallpaper=/home/$USER/.local/bin/wallpaper
 
 #alias vim='vim'
 #alias vi='vim'
-gitpush() {
-    git add .
-    git commit -m "$*"
-    git pull
-    git push
-}
-gitupdate() {
-    eval "$(ssh-agent -s)"
-    ssh-add ~/.ssh/github
-    ssh -T git@github.com
-}
-alias gp=gitpush
-alias gu=gitupdate
+#gitpush() {
+#    git add .
+#    git commit -m "$*"
+#    git pull
+#    git push
+#}
+#gitupdate() {
+#    eval "$(ssh-agent -s)"
+#    ssh-add ~/.ssh/github
+#    ssh -T git@github.com
+#}
+#alias gp=gitpush
+#alias gu=gitupdate
 
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 #alias firefox='GTK_USE_PORTAL=1 firefox'
 alias cls="clear"
+
+alias sshc='ssh-connect'
