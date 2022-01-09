@@ -40,6 +40,9 @@ ln -s ~/zsh/zshrc.pure ~/.zsh
   - [`powerlevel10k`](https://github.com/romkatv/powerlevel10k) theme - The the actual theme
   - [`pure`](https://github.com/sindresorhus/pure) - Pure shell look for zsh
 
+### Install from your distribution's repository
+  - [`thefuck`](https://github.com/nvbn/thefuck) - Corrects errors in previous console commands (when you mess up a command, type `fuck`)
+
 ### Recomended for `powerlevel10k`
   - [`nerd-fonts`](https://github.com/ryanoasis/nerd-fonts "nerd-fonts github page") - I recomend `MesloLGS NF Regular`
       - On Arch you can use `ttf-meslo-nerd-font-powerlevel10k` so you don't have to donwload the whole git repository
