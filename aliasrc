@@ -27,11 +27,6 @@ ex ()
   fi
 }
 
-test ()
-{
-echo test;
-}
-
 pacmanupdate ()
 {
   echo "Enter your country (like 'US' or 'CZ')";
