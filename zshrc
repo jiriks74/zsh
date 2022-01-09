@@ -37,7 +37,7 @@ export YSU_MESSAGE_POSITION="after"
 [ -f "$HOME/zsh/aliasrc" ] && source "$HOME/zsh/aliasrc"
 
 # Initialize `thefuck`
-eval $(thefuck --alias)
+eval $(thefuck --alias) 2>/dev/null
 
 # Load ; should be last.
 source $HOME/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
