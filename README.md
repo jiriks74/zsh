@@ -4,6 +4,7 @@ My ZSH config
 ## Setup
   - Clone the repository to your home folder
 ```
+cd ~
 git clone --recursive https://github.com/jiriks74/zsh
 ```
 ### `powerlevel10k` theme
@@ -28,38 +29,30 @@ ln -s ~/zsh/zshrc.pure ~/.zsh
 ## Get Dependancies
 
 ### Included in this repository
-  - `zsh-syntax-highlighting` - syntax highlighting for ZSH
-  - `zsh-autosuggestions` - Suggestions based on your history
-  - `powerlevel10k` theme - The the actual theme
-  - `pure` - Pure shell look for zsh
-
-### Get this from your distribution's repository
-  ### Debian Dependencies
-    ```
-    sudo apt install autojump zsh
-    ```
-
-  ### Arch Dependencies
-    ```
-    yay -S autojump zsh
-    ```
+  - [`zsh-z`](https://github.com/agkozak/zsh-z) - ZSH plugin that is alternative to `autojump`. Use `z dirname`to go to a specific directory on your system without having to type the whole path (eg `z et` will get you to `/etc`)
+  - [`dirhistory`](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dirhistory) - Plugin from oh my zsh that allows you to easily go through history of directories (due to this not being a repository I have to update this plugin manually. If it's out of date, please create an issue)
+  - [`ssh-connect`](https://github.com/gko/ssh-connect) - Plugin that logs your `ssh` commands and provides a nice menu with your recent connections (alias: `sshc`)
+  - [`web-search`](https://github.com/sineto/web-search) - Allows you to DuckDuckGo, Google, etc. directly from your zsh. just run `ddg` or `google`
+  - [`zsh-you-should-use`](https://github.com/MichaelAquilina/zsh-you-should-use) - Usefull plugin that suggest existing aliases for a command you just ran (try it out with `ls -l`)
+  - [`zsh-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions) - Suggestions based on your history
+  - [`git`](https://github.com/davidde/git) - Usefull git aliases
+  - [`zsh-syntax-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting) - Syntax highlighting for ZSH
+  - [`powerlevel10k`](https://github.com/romkatv/powerlevel10k) theme - The the actual theme
+  - [`pure`](https://github.com/sindresorhus/pure) - Pure shell look for zsh
 
 ### Recomended for `powerlevel10k`
   - [`nerd-fonts`](https://github.com/ryanoasis/nerd-fonts "nerd-fonts github page") - I recomend `MesloLGS NF Regular`
+      - On Arch you can use `ttf-meslo-nerd-font-powerlevel10k` so you don't have to donwload the whole git repository
 
 ## Set as default
 To set zsh as default shell for your user, edit `/etc/passwd` (from `/bin/bash` to `/bin/zsh`)
 
 ### There are two ways:
 #### Running this command:
-<<<<<<< HEAD
-```chsch $USER```
-
-=======
 - ```chsch $USER```
 - Input your password
 - Input `/bin/zsh`
->>>>>>> master
+
 #### Modifying `/etc/passwd`
   * Change your user in `/etc/passwd` to `/bin/zsh` instead of `/bin/bash`
 <details>
@@ -70,6 +63,3 @@ To set zsh as default shell for your user, edit `/etc/passwd` (from `/bin/bash` 
 
     To:   ...`:/bin/zsh`
 </details>
-
-## What I used
-My config is based on Chris Titus's config, `powerlevel10k` theme and `pure`
