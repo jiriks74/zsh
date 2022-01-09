@@ -37,11 +37,6 @@ zsh
 ```
 p10k config
 ```
-### `pure` shell theme
-  - Link the `zsh.pure` file to your home folder as `.zshrc`
-```
-ln -s ~/zsh/zshrc.pure ~/.zsh
-```  
 
 ## Get Dependencies
 
@@ -55,7 +50,6 @@ ln -s ~/zsh/zshrc.pure ~/.zsh
   - [`git`](https://github.com/davidde/git) - Usefull git aliases
   - [`zsh-syntax-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting) - Syntax highlighting for ZSH
   - [`powerlevel10k`](https://github.com/romkatv/powerlevel10k) theme - The the actual theme
-  - [`pure`](https://github.com/sindresorhus/pure) - Pure shell look for zsh
 
 ### Install from your distribution's repository
   - [`thefuck`](https://github.com/nvbn/thefuck) - Corrects errors in previous console commands (when you mess up a command, type `fuck`)
