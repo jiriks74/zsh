@@ -12,6 +12,7 @@ git clone --recursive https://github.com/jiriks74/zsh
 ```
 cd ~/zsh
 git pull --recurse-submodules
+git submodule update --init --recursive
 ```
 
 ### `powerlevel10k` theme
