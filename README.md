@@ -26,7 +26,7 @@ p10k config
 ln -s ~/zsh/zshrc.pure ~/.zsh
 ```  
 
-## Get Dependancies
+## Get Dependencies
 
 ### Included in this repository
   - [`zsh-z`](https://github.com/agkozak/zsh-z) - ZSH plugin that is alternative to `autojump`. Use `z dirname`to go to a specific directory on your system without having to type the whole path (eg `z et` will get you to `/etc`)
