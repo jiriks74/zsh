@@ -42,7 +42,6 @@ then
   eval $(thefuck --alias)
 fi
 
-
 # Load ; should be last.
 source $HOME/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source $HOME/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
