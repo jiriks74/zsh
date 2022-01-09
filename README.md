@@ -19,6 +19,23 @@ zsh
 ```
 p10k config
 ```
+  - Set `zsh` as your default shell
+### There are two ways:
+#### Running this command:
+- ```chsch $USER```
+- Input your password
+- Input `/bin/zsh`
+
+#### Modifying `/etc/passwd`
+  * Change your user in `/etc/passwd` to `/bin/zsh` instead of `/bin/bash`
+<details>
+
+  * Find line containing your username
+  * Change the end of the line
+    From: ...`:/bin/bash`
+
+    To:   ...`:/bin/zsh`
+</details>
 
 ## Updating
 ```
@@ -55,23 +72,3 @@ git reset --hard origin/master
 ### Recomended for `powerlevel10k`
   - [`nerd-fonts`](https://github.com/ryanoasis/nerd-fonts "nerd-fonts github page") - I recomend `MesloLGS NF Regular`
       - On Arch you can use `ttf-meslo-nerd-font-powerlevel10k` so you don't have to donwload the whole git repository
-
-## Set as default
-To set zsh as default shell for your user, edit `/etc/passwd` (from `/bin/bash` to `/bin/zsh`)
-
-### There are two ways:
-#### Running this command:
-- ```chsch $USER```
-- Input your password
-- Input `/bin/zsh`
-
-#### Modifying `/etc/passwd`
-  * Change your user in `/etc/passwd` to `/bin/zsh` instead of `/bin/bash`
-<details>
-
-  * Find line containing your username
-  * Change the end of the line
-    From: ...`:/bin/bash`
-
-    To:   ...`:/bin/zsh`
-</details>
