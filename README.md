@@ -7,6 +7,13 @@ My ZSH config
 cd ~
 git clone --recursive https://github.com/jiriks74/zsh
 ```
+
+## Updating
+```
+cd ~/zsh
+git pull --recurse-submodules
+```
+
 ### `powerlevel10k` theme
   - Link the `zsh` file to your home folder as `.zshrc`
 ```
