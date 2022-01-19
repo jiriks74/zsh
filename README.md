@@ -1,6 +1,12 @@
 # ZSH
 My ZSH config
 
+## Your own customizations
+If you want to make any customizations to your config without deleting them, or merging them, every time I update, here's the solution:
+  - Make a file called `custom-zshrc` in your `$HOME/zsh` directory
+  - Put your customizations in that file
+The file is in `.gitignore`, so it won't interfere with the repository and you can pull updates without resolving differences between local files and the repository. It is also set to be sourced in the `zshrc` file, so you really don't have to set up anything, just add the customizations.
+
 ## Setup
   - Clone the repository to your home folder
 ```
