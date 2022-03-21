@@ -77,4 +77,7 @@ git reset --hard origin/master
 
 ### Recomended for `powerlevel10k`
   - [`nerd-fonts`](https://github.com/ryanoasis/nerd-fonts "nerd-fonts github page") - I recomend `MesloLGS NF Regular`
-      - On Arch you can use `ttf-meslo-nerd-font-powerlevel10k` so you don't have to donwload the whole git repository
+      - On Arch you can use `ttf-meslo-nerd-font-powerlevel10k` so you don't have to donwload the whole git repository¨¨
+
+## Stats
+![Alt](https://repobeats.axiom.co/api/embed/0af45810ad05b4ddd92d30b2d1fa5a63be0d5bc0.svg "Repobeats analytics image")
