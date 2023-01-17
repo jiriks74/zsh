@@ -22,3 +22,6 @@
 [submodule "zsh-z"]
 	path = zsh-z
 	url = https://github.com/agkozak/zsh-z.git
+[submodule "find-the-command"]
+	path = find-the-command
+	url = https://github.com/pkasemir/find-the-command
