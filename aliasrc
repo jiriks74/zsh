@@ -1,7 +1,3 @@
-##pacman-update country
-update=CZ
-
-#
 # # ex - archive extractor
 # # usage: ex <file>
 ex ()
@@ -29,14 +25,13 @@ ex ()
 
 pacmanupdate ()
 {
-  echo "Enter your country (like 'US' or 'CZ')";
-  read update;
+  echo -n "Enter the country code for the mirrorlist you want to use (default: CZ): "
+  read -t 10 update;
+  if [ -z "$update" ]; then
+    update=CZ;
+  fi
   sudo reflector -c $update -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist;
 }
-
-export EDITOR=nano
-
-alias pacman-update='sudo reflector -c $country -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist'
 
 alias ls='ls --color'
 alias ll='ls -l'
@@ -88,24 +83,8 @@ alias mv='mv -i'
 
 alias wallpaper=/home/$USER/.local/bin/wallpaper
 
-#alias vim='vim'
-#alias vi='vim'
-#gitpush() {
-#    git add .
-#    git commit -m "$*"
-#    git pull
-#    git push
-#}
-#gitupdate() {
-#    eval "$(ssh-agent -s)"
-#    ssh-add ~/.ssh/github
-#    ssh -T git@github.com
-#}
-#alias gp=gitpush
-#alias gu=gitupdate
-
-alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-#alias firefox='GTK_USE_PORTAL=1 firefox'
+# alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+# alias firefox='GTK_USE_PORTAL=1 firefox'
 alias cls="clear"
 
 alias sshc='ssh-connect'
