@@ -3,6 +3,7 @@
 ## To migrate your current repository to the new one:
 
 ```bash
+cd ~/zsh
 git remote set-url origin https://gitea.stefka.eu/jiriks74/zsh
 ```
 
