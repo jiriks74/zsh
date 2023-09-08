@@ -1,3 +1,11 @@
+# THIS REPOSITORY MOVED TO https://gitea.stefka.eu/jiriks74/zsh
+
+## To migrate your current repository to the new one:
+
+```bash
+git remote set-url origin https://gitea.stefka.eu/jiriks74/zsh
+```
+
 # ZSH
 My ZSH config
 
